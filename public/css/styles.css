@@ -1,0 +1,37 @@
+@import url('colors.css');
+
+#container{
+    width: 100%;
+    display:flex;
+    flex: 1;
+}
+
+#navigationBar{
+    background: white;
+    padding: 1%;
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    top:0;
+    width: 100%;
+    box-shadow: 2px 2px 10px black;
+}
+
+#scheduleTab, #previewTab, #liveTab{
+    flex: 1 1 0;
+    height: 100vh;
+}
+
+#previewTab{
+    background: white;
+    flex: 2 1 0;
+}
+
+#scheduleTab{
+    background: var(--color-1);
+}
+
+#liveTab{
+    background: var(--color-1);
+}
