@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('song-title');
+            $table->string('song-title')->unique();
             $table->boolean('song-status')->default(1);
         });
     }

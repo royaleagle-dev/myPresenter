@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class SongModel extends Model
 {
     use HasFactory;
+    public $table = 'songs';
+    public $fillable = [
+        'song-title',
+        'song-status',
+    ];
 }

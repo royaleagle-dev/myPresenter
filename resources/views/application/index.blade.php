@@ -179,9 +179,9 @@
             const addSong = fetch("{{ url('/addSong') }}", {
                 method: 'POST',
                 body: JSON.stringify({
-                    'song-title': document.querySelector("#song-title").textContent,
-                    'verse-title': document.querySelector("#verse-title").textContent,
-                    'verse-content': document.querySelector("#content-title").textContent,
+                    'song-title': document.querySelector("#song-title").value,
+                    'verse-title': document.querySelector("#verse-title").value,
+                    'verse-content': document.querySelector("#verse-content").value,
                     '_token': "{{ csrf_token() }}",
                 }),
                 headers: {

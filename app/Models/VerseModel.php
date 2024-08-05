@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class VerseModel extends Model
 {
     use HasFactory;
+    public $table = 'verses';
+    public $fillable = [
+        'verse-title',
+        'verse-content',
+        'song-id',
+    ];
 }
